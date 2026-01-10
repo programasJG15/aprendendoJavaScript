@@ -1,0 +1,12 @@
+<meta charset="uft-8">
+<script>
+    // Lê os numeros
+    var vjantar = Number(prompt("Valor do jantar: "));
+    var percentualGorjeta = Number(prompt("Percentual desejado de gorjeta: "));
+    // calcula a gorjeta
+    var gorjeta = vjantar * (percentualGorjeta / 100);
+    // calcular o total do jantar
+    var soma = vjantar + gorjeta;
+    // exibe o resultado
+    alert("Taxa Garçom: R$ " + gorjeta.toFixed(2) + "\nTotal: R$ " + soma.toFixed(2));
+</script>

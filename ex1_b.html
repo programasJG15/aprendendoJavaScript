@@ -1,0 +1,14 @@
+<meta charset="uft-8">
+<script>
+    // lê os numeros
+    var preco = Number(prompt("Preço do produto: R$"));
+    var descontoporcentagem = Number(prompt("Desconto (%): "));
+    var parcelas = Number(prompt("Quantidade de parcelas: "));
+    // calculo do preço com desconto ou parcelas
+    var desconto = preco - (preco * (descontoporcentagem / 100));
+    var parcelado = preco / parcelas;
+    // exibição do resultado
+    alert("preço produto: R$ " + preco.toFixed(2) + 
+                "\nPreço com desconto: R$ " + desconto.toFixed(2) + 
+                  "\nParcelado em: " + parcelas + "X R$ " + parcelado.toFixed(2));
+</script>
