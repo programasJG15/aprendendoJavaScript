@@ -7,16 +7,22 @@
     <!-- corpo da nossa primeira página -->
     <body>  
         <p> Seja bem-vindo ao nosso site!</p>
-        <p> por favor! digite seu nome abaixo</p>
-        <input type="text" id="nomeusuario" placeholder="Digite aqui seu nome">
+        <p> Por favor! digite seu nome abaixo</p>
+        <input type="text" id="nomeUsuario" placeholder="Digite aqui seu nome">
+        <!-- botao para enviar o nome -->
         <button onclick="saudarUsuario()">Enviar</button>
+        <p id="outSaudacao"></p>
+        <p id="nomeUsuario"></p>
         <script>
             function saudarUsuario() {
-                var nome = document.getElementById("nomeusuario").value;
-                alert("Olá, " + nome + "! Seja bem-vindo ao nosso site."); 
-            }   
-        </script>
-
+                // obtém o nome digitado pelo usuário
+                var nome = document.getElementById("nomeUsuario").value;
+                // cria a mensagem de saudação
+                var mensagem = "Olá, " + nome + "! Seja bem-vindo ao nosso site.";
+                // exibe a mensagem na página
+                document.getElementById("outSaudacao").textContent = mensagem;
+            }
+        </script>   
 
     </body>
 </html>
