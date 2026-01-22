@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Exemplo 2.2</title>
+        <style>
+             #outTitulo {
+                font-size: 30px;
+                color: black ;
+             }
+             #outResposta {
+                font-size: 40px;
+                color: black ;
+             }
+            </style>
         </head>
+
         <body>
             <h1>Video Locadora JS</h1>
             <hr>
             <p> Titulo do Filme: 
-                <input Type="text" id="intitulo">
+                <input Type="text" id="inTitulo">
             </p>
             <p> Duração (min):
-                <input Type="text" id="induracao">
+                <input Type="text" id="inDuracao">
             </p>
             <p>
-                <input type="button" value="Converter em Horas e minutos" id="btconverter"> 
+                <button onclick="converterDuracao()">Converter</button>
             </p>
             <p id="outTitulo"></p>
             <p id="outResposta"></p>

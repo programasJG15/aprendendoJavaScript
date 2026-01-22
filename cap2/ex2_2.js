@@ -2,7 +2,7 @@ function converterDuracao() {
     event.preventDefault();
     // cria referencia aos elementos da pagina
     var inTitulo = document.getElementById("inTitulo");
-    var induracao = document.getElementById("induracao");
+    var inDuracao = document.getElementById("inDuracao");
     var outTitulo = document.getElementById("outTitulo");
     var outResposta = document.getElementById("outResposta");
 
@@ -20,10 +20,10 @@ function converterDuracao() {
     // altera o conteud dos paragrafos de respostas
     outTitulo.textContent = titulo;
     outResposta.textContent = horas + " hora(s) e " + minutos + " minuto(s)";
-}
+    }
 
     // criar referencia ao elemento btconverter (botão)
-    var btconverter = document.getElementById("btconverter");
+    var btConverter = document.getElementById("btConverter");
 
     // registra um evento associado ao botão, para carregar uma função
-    btconverter.addEventListener("click", converterDuracao);
+    btConverter.addEventListener("click", converterDuracao);

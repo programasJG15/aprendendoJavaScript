@@ -1,0 +1,22 @@
+<!DOCTYPE html> <html lang="pt-BR">
+    <!-- cabeçalho da nossa primeira página -->
+    <head>
+    <meta charset="UTF-8">
+    <title> Pagina de Boas-vindas </title>
+    </head>
+    <!-- corpo da nossa primeira página -->
+    <body>  
+        <p> Seja bem-vindo ao nosso site!</p>
+        <p> por favor! digite seu nome abaixo</p>
+        <input type="text" id="nomeusuario" placeholder="Digite aqui seu nome">
+        <button onclick="saudarUsuario()">Enviar</button>
+        <script>
+            function saudarUsuario() {
+                var nome = document.getElementById("nomeusuario").value;
+                alert("Olá, " + nome + "! Seja bem-vindo ao nosso site."); 
+            }   
+        </script>
+
+
+    </body>
+</html>
