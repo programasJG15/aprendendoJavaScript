@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário HTML</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: blue;
+                font-size: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <h1>Formulário de Contato</h1>
+    <body>
+        <form>
+            <!-- campo nome-->
+            <Label for="nome">Nome: </Label>
+            <input type="text" name="nome" required>
+            <br>
+            <!-- campo email-->
+            <label for="email">Email: </label>
+            <input type="email" name="email" required>
+            <br>
+            <!-- campo telefone-->
+            <label for="tel">telefone: </label>
+            <input type="tel" name="telefone" required>
+            <br>
+            <!-- campo data de nascimento-->
+            <label for="data_nascimento">Data de Nascimento: </label>
+            <input type="date" name="data_nascimento" required>
+            <br>
+            <!-- campo mensagem-->
+             <label for="mensagem">Mensagem:</label>
+             <textarea name="mensagem"cols="30" rows="4"></textarea>
+             <!-- botão enviar -->
+             <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

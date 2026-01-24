@@ -1,0 +1,45 @@
+<form action="/pagina-processa-dados-do-form" method="post">
+    <fieldset>
+        <legend>Dados</legend>
+        <!-- campo nome-->
+        <label for="nome">Nome: </label>
+        <input type="text" minlength="3" id="nome" />
+        <!-- campo data de nascimento-->
+        <label for="data_nascimento">Data de Nascimento: </label>
+        <input type="text" id="data_nascimento" />
+        <!-- campo CPF-->
+        <label for="cpf">CPF: </label>
+        <input type="cpf" minlength="11" id:="cpf" />
+    </fieldset>
+    <!-- campo endereço-->
+    <fieldset>
+        <legend>Endereço</legend>
+        <!-- campo tipo de endereço -->
+        <label for="tipo_endereço">Tipo: </label>
+        <select id="tipo_endereco">
+            <option value="Selecione"></option>
+            <option value="">Rua</option>
+            <option value="">Estrada</option>
+            <option value="">Rodovia</option>
+            <option value="">Outros</option>
+        </select>
+        <label for="logradouro_endereco">logradouro</label>
+        <input type="text" id="logradouro_endereco"/>
+        <!-- campo numero -->
+         <label for="numero_endereco">Número:</label>
+         <input type="text" id="numero_endereco"/>
+            <!-- campo complemento -->
+        <label for="complemento_endereco">Complemento:</label>
+        <input type="text" id="complemento_endereco"/>
+    </fieldset>
+    <!-- campo fale conosco -->
+    <fieldset>
+        <legend>Fale Conosco</legend>
+        <label for="msg">Mensagem:</label>
+        <textarea type="text" id="msg"></textarea>
+    </fieldset>
+    <fieldset>
+        <button type="submit">Enviar sua mensagem</button>
+        <button type="reset">Limpar o Formulario</button>
+    </fieldset>
+</form>
